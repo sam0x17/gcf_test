@@ -8,6 +8,10 @@ targets:
   gcf_test:
     main: src/gcf_test.cr
 
+dependencies:
+  gcf:
+    path: ../gcf.cr
+
 crystal: 0.25.1
 
 license: MIT
