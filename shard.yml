@@ -1,0 +1,13 @@
+name: gcf_test
+version: 0.1.0
+
+authors:
+  - Sam Johnson <sam@durosoft.com>
+
+targets:
+  gcf_test:
+    main: src/gcf_test.cr
+
+crystal: 0.25.1
+
+license: MIT
