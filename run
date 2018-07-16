@@ -1,0 +1,4 @@
+#!/bin/bash
+shards install
+crystal build src/gcf_test.cr
+node .

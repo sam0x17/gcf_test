@@ -1,6 +1,12 @@
-require "./gcf_test/*"
+require "gcf"
 
-# TODO: Write documentation for `GcfTest`
-module GcfTest
-  # TODO: Put your code here
+class GcfTest < GCF::CloudFunction
+  def run
+    console.log "welcome to the test"
+    sleep 3
+    console.warn "this is a warning"
+    console.error "this is an error"
+    console.log "hey\nthis\nhas\nnewlines"
+    send_file "./src/gcf_test.cr"
+  end
 end
