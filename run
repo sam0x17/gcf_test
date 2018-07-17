@@ -1,4 +1,4 @@
 #!/bin/bash
+rm lib -rf
 shards install
-crystal build src/gcf_test.cr
-node .
+gcf --deploy
