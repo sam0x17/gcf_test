@@ -1,8 +1,8 @@
 require "gcf"
 
 class GcfTest < GCF::CloudFunction
-  def run
-    console.log "before error"
-    raise "this is america"
+  def run(params : JSON::Any)
+    console.log params
+    send "color: #{params["color"]?}"
   end
 end
